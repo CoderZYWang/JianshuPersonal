@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="FP6-ms-J7S" customClass="WZYMeSubCell" customModule="JianShu" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="FP6-ms-J7S" id="nxa-1M-ZdR">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_mine_article_public" translatesAutoresizingMaskIntoConstraints="NO" id="MXC-X2-mHs">
+                        <rect key="frame" x="20" y="10" width="23" height="23"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="23" id="p56-LJ-3bN"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="公开文章" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1ga-Xo-0Fe">
+                        <rect key="frame" x="53" y="10" width="60" height="23"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.18823529411764706" green="0.18823529411764706" blue="0.18823529411764706" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3XY-Qg-4u1">
+                        <rect key="frame" x="344.5" y="10" width="15.5" height="23"/>
+                        <attributedString key="attributedText">
+                            <fragment content="10">
+                                <attributes>
+                                    <color key="NSColor" red="0.50588235294117645" green="0.50588235294117645" blue="0.50588235294117645" alpha="1" colorSpace="calibratedRGB"/>
+                                    <font key="NSFont" size="13" name="STZhongsong"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="3XY-Qg-4u1" firstAttribute="top" secondItem="nxa-1M-ZdR" secondAttribute="top" constant="10" id="42Q-EA-cci"/>
+                    <constraint firstAttribute="trailing" secondItem="3XY-Qg-4u1" secondAttribute="trailing" constant="15" id="9eT-Si-Pm3"/>
+                    <constraint firstItem="MXC-X2-mHs" firstAttribute="top" secondItem="nxa-1M-ZdR" secondAttribute="top" constant="10" id="FpD-bA-rvc"/>
+                    <constraint firstItem="1ga-Xo-0Fe" firstAttribute="bottom" secondItem="MXC-X2-mHs" secondAttribute="bottom" id="Iyp-is-kFo"/>
+                    <constraint firstAttribute="bottom" secondItem="MXC-X2-mHs" secondAttribute="bottom" constant="10" id="QOY-eh-nn0"/>
+                    <constraint firstItem="1ga-Xo-0Fe" firstAttribute="leading" secondItem="MXC-X2-mHs" secondAttribute="trailing" constant="10" id="Wt6-t7-Cab"/>
+                    <constraint firstAttribute="bottom" secondItem="3XY-Qg-4u1" secondAttribute="bottom" constant="10" id="dQ7-ir-NSI"/>
+                    <constraint firstItem="1ga-Xo-0Fe" firstAttribute="top" secondItem="MXC-X2-mHs" secondAttribute="top" id="iwS-GA-ySu"/>
+                    <constraint firstItem="MXC-X2-mHs" firstAttribute="leading" secondItem="nxa-1M-ZdR" secondAttribute="leading" constant="20" id="pbZ-e0-2EH"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="countLabel" destination="3XY-Qg-4u1" id="Kbw-R3-qDI"/>
+                <outlet property="imageV" destination="MXC-X2-mHs" id="bEj-44-7cy"/>
+                <outlet property="titleLabel" destination="1ga-Xo-0Fe" id="fYs-Up-0hs"/>
+            </connections>
+            <point key="canvasLocation" x="242.5" y="233"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="icon_mine_article_public" width="23" height="23"/>
+    </resources>
+</document>

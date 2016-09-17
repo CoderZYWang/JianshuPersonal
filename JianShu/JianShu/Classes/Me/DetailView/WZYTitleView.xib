@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="WZYTitleView" customModule="JianShu" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="45"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wkQ-wv-FMU">
+                    <rect key="frame" x="0.0" y="0.0" width="125" height="45"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <state key="normal" title="动态">
+                        <color key="titleColor" red="0.7725490196" green="0.7725490196" blue="0.7725490196" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <state key="selected">
+                        <color key="titleColor" red="0.85490196080000003" green="0.50980392159999999" blue="0.46666666670000001" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="activityBtnClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="irl-Ml-4CC"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l8g-AG-MHC">
+                    <rect key="frame" x="125" y="0.0" width="125" height="45"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <state key="normal" title="文章">
+                        <color key="titleColor" red="0.7725490196" green="0.7725490196" blue="0.7725490196" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <state key="selected">
+                        <color key="titleColor" red="0.85490196080000003" green="0.50980392159999999" blue="0.46666666670000001" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="articleBtnClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="YRx-Wj-d2q"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iep-7W-VBm" userLabel="topLine">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="1"/>
+                    <color key="backgroundColor" red="0.92156862745098034" green="0.92156862745098034" blue="0.92156862745098034" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="pum-tJ-QfW"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="peE-na-kbX" userLabel="bottomLine">
+                    <rect key="frame" x="0.0" y="44" width="375" height="1"/>
+                    <color key="backgroundColor" red="0.92156862750000001" green="0.92156862750000001" blue="0.92156862750000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="SOR-9o-ut5"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" tag="2" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="crY-eH-rca">
+                    <rect key="frame" x="250" y="0.0" width="125" height="45"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <state key="normal" title="更多">
+                        <color key="titleColor" red="0.7725490196" green="0.7725490196" blue="0.7725490196" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <state key="selected">
+                        <color key="titleColor" red="0.85490196080000003" green="0.50980392159999999" blue="0.46666666670000001" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="moreBtnClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="LYY-E5-jZo"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="iep-7W-VBm" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="9xo-bK-EWp"/>
+                <constraint firstItem="wkQ-wv-FMU" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="DiW-1u-N1s"/>
+                <constraint firstItem="peE-na-kbX" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="F88-IG-G2h"/>
+                <constraint firstItem="l8g-AG-MHC" firstAttribute="height" secondItem="wkQ-wv-FMU" secondAttribute="height" id="JqC-E8-SqE"/>
+                <constraint firstAttribute="bottom" secondItem="peE-na-kbX" secondAttribute="bottom" id="VKG-MC-CeY"/>
+                <constraint firstItem="iep-7W-VBm" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="ZbM-Xb-qg4"/>
+                <constraint firstItem="crY-eH-rca" firstAttribute="top" secondItem="l8g-AG-MHC" secondAttribute="top" id="bqj-x4-nAI"/>
+                <constraint firstAttribute="trailing" secondItem="iep-7W-VBm" secondAttribute="trailing" id="c1m-d0-rEs"/>
+                <constraint firstAttribute="trailing" secondItem="peE-na-kbX" secondAttribute="trailing" id="dtI-5s-pfJ"/>
+                <constraint firstItem="l8g-AG-MHC" firstAttribute="leading" secondItem="wkQ-wv-FMU" secondAttribute="trailing" id="eXA-Kf-OZS"/>
+                <constraint firstItem="crY-eH-rca" firstAttribute="height" secondItem="l8g-AG-MHC" secondAttribute="height" id="ifi-OB-6a0"/>
+                <constraint firstAttribute="trailing" secondItem="crY-eH-rca" secondAttribute="trailing" id="m9I-ye-8Hl"/>
+                <constraint firstItem="crY-eH-rca" firstAttribute="width" secondItem="l8g-AG-MHC" secondAttribute="width" id="mgh-4R-4Uf"/>
+                <constraint firstAttribute="bottom" secondItem="wkQ-wv-FMU" secondAttribute="bottom" id="naF-1M-7X4"/>
+                <constraint firstItem="wkQ-wv-FMU" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="qrr-oS-SfV"/>
+                <constraint firstItem="l8g-AG-MHC" firstAttribute="width" secondItem="wkQ-wv-FMU" secondAttribute="width" id="vPP-76-myD"/>
+                <constraint firstItem="l8g-AG-MHC" firstAttribute="top" secondItem="wkQ-wv-FMU" secondAttribute="top" id="zCU-RP-vjd"/>
+                <constraint firstItem="crY-eH-rca" firstAttribute="leading" secondItem="l8g-AG-MHC" secondAttribute="trailing" id="zb7-Cs-603"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="activityBtn" destination="wkQ-wv-FMU" id="AXd-ib-KKv"/>
+                <outlet property="articleBtn" destination="l8g-AG-MHC" id="769-rU-7eL"/>
+                <outlet property="moreBtn" destination="crY-eH-rca" id="8tn-Oi-2ou"/>
+            </connections>
+            <point key="canvasLocation" x="234.5" y="85"/>
+        </view>
+    </objects>
+</document>
