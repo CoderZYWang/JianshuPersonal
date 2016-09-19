@@ -9,7 +9,7 @@
 import UIKit
 
 class WZYDetailViewController: UIViewController {
-//    
+    
     let screenW : CGFloat = UIScreen.mainScreen().bounds.width
     
     // 自定义nav上面的titleView
